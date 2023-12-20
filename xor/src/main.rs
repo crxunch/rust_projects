@@ -1,11 +1,12 @@
 
-use std::env;
+// use std::env;
 
 fn main() {
 
-    let args: Vec<String> = env::args().collect();
-    let message = &args[1];
-    let key = &args[2];
+    // let args: Vec<String> = env::args().collect();
+
+    let message = "this is the message that we need to encrypt";
+    let key = "super duper secret key";
     let final_message = xor(message, key);
 
     println!("{:?}", final_message);
